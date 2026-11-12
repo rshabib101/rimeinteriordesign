@@ -1,0 +1,234 @@
+@import 'tailwindcss';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-fade';
+@import 'glightbox/dist/css/glightbox.min.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+@source '../js/**/*.js';
+
+@theme {
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-bengali: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+
+    --color-offwhite: #F8F5F0;
+    --color-cream: #F2ECE1;
+    --color-warmgray: #E7E1D6;
+    
+    --color-charcoal-deep: #121212;
+    --color-charcoal: #1C1C1C;
+    --color-charcoal-card: #232323;
+    --color-charcoal-muted: #2D2D2D;
+    
+    --color-gold: #B8894D;
+    --color-gold-light: #CF9D5D;
+    --color-gold-hover: #C59353;
+    --color-gold-dark: #8F6632;
+    
+    --color-sage: #8A9A86;
+    --color-sage-light: #A3B29F;
+    --color-sage-dark: #6C7C68;
+}
+
+/* Base styles */
+:root {
+    --bg-base: #F8F5F0;
+    --text-base: #1C1C1C;
+    --accent-gold: #B8894D;
+    --accent-sage: #8A9A86;
+}
+
+html {
+    scroll-behavior: auto; /* Let Lenis handle smooth scrolling */
+    background-color: #F8F5F0;
+    color: #1C1C1C;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="bn"] body {
+    font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Selection */
+::selection {
+    background-color: #B8894D;
+    color: #FFFFFF;
+}
+
+/* Lenis smooth scrolling */
+html.lenis, html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1C1C1C;
+}
+::-webkit-scrollbar-thumb {
+    background: #B8894D;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #CF9D5D;
+}
+
+/* Custom cursor */
+@media (pointer: fine) {
+    .custom-cursor {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease, transform 0.15s ease-out;
+    }
+    .custom-cursor-dot {
+        width: 6px;
+        height: 6px;
+        background-color: #B8894D;
+    }
+    .custom-cursor-outline {
+        width: 36px;
+        height: 36px;
+        border: 1px solid rgba(184, 137, 77, 0.45);
+        transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+    }
+    body.cursor-hover .custom-cursor-outline {
+        width: 56px;
+        height: 56px;
+        border-color: rgba(184, 137, 77, 0.9);
+        background-color: rgba(184, 137, 77, 0.08);
+    }
+}
+
+/* 3D Tilt Card & Glassmorphism */
+.tilt-card-container {
+    perspective: 1200px;
+}
+
+.tilt-card {
+    transform-style: preserve-3d;
+    transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.tilt-card-content {
+    transform: translateZ(35px);
+}
+
+.glass-card-light {
+    background: rgba(248, 245, 240, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 45px -10px rgba(28, 28, 28, 0.08);
+}
+
+.glass-card-dark {
+    background: rgba(28, 28, 28, 0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+
+.glass-gold-subtle {
+    border: 1px solid rgba(184, 137, 77, 0.25);
+    background: linear-gradient(135deg, rgba(184, 137, 77, 0.06) 0%, rgba(28, 28, 28, 0.6) 100%);
+}
+
+/* Luxury Gold Shimmer Animation */
+.gold-shimmer {
+    position: relative;
+    overflow: hidden;
+}
+.gold-shimmer::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0) 80%
+    );
+    transform: rotate(30deg) translateY(-100%);
+    transition: transform 0.75s ease;
+}
+.gold-shimmer:hover::after {
+    transform: rotate(30deg) translateY(100%);
+}
+
+/* Text Gold Gradient */
+.text-gold-gradient {
+    background: linear-gradient(135deg, #CF9D5D 0%, #B8894D 50%, #8F6632 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Subtle background grid / dots */
+.bg-subtle-pattern {
+    background-image: radial-gradient(rgba(184, 137, 77, 0.12) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+/* Model Viewer Custom Styling */
+model-viewer {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    --poster-color: transparent;
+    --progress-bar-color: #B8894D;
+    --progress-bar-height: 2px;
+}
+
+/* Swiper Luxury Accent */
+.swiper-pagination-bullet {
+    background: rgba(184, 137, 77, 0.4) !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+    background: #B8894D !important;
+    width: 24px !important;
+    border-radius: 999px !important;
+}
+
+/* Reduced Motion Fallback */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .custom-cursor {
+        display: none !important;
+    }
+}
