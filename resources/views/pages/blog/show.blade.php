@@ -1,5 +1,5 @@
 @extends('layouts.app', [
-    'metaTitle' => $post->meta_title ?? ($post->localized_title . ' | Rime Design Journal'),
+    'metaTitle' => $post->meta_title ?? ($post->localized_title . ' | Asad Design Journal'),
     'metaDescription' => $post->meta_description ?? $post->excerpt,
     'ogType' => 'article',
     'metaImage' => \App\Support\MediaHelper::url($post->cover_image),
@@ -13,7 +13,7 @@
         'headline' => $post->localized_title,
         'description' => $post->excerpt,
         'datePublished' => $post->published_at?->toAtomString(),
-        'author' => ['@type' => 'Person', 'name' => $post->author?->name ?? 'Rime Editorial'],
+        'author' => ['@type' => 'Person', 'name' => $post->author?->name ?? 'Asad Editorial'],
         'image' => \App\Support\MediaHelper::url($post->cover_image),
     ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>
@@ -26,7 +26,7 @@
             <a href="{{ route('blog.index') }}" class="text-xs uppercase tracking-widest text-gold hover:underline">&larr; Back to Journal</a>
             <div class="text-xs font-bold uppercase tracking-widest text-gold-light">{{ $post->category }} • {{ $post->published_at?->format('F d, Y') }}</div>
             <h1 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">{{ $post->localized_title }}</h1>
-            <div class="text-xs text-offwhite/60">By {{ $post->author?->name ?? 'Rime Studio' }} • {{ number_format($post->views_count) }} views</div>
+            <div class="text-xs text-offwhite/60">By {{ $post->author?->name ?? 'Asad Studio' }} • {{ number_format($post->views_count) }} views</div>
         </div>
     </header>
 

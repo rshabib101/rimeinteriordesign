@@ -129,7 +129,7 @@
             <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] border border-black/5">
                 <img
                     src="{{ $aboutImage ?? 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=85' }}"
-                    alt="Rime Interior Design Studio"
+                    alt="Asad Interior Design Studio"
                     class="w-full h-full object-cover"
                     loading="lazy"
                 />
@@ -307,7 +307,7 @@
                 :afterImage="$comparisonProject->after_image"
                 :title="$comparisonProject->localized_title"
                 beforeLabel="Raw Shell"
-                afterLabel="Rime Handover"
+                afterLabel="Asad Handover"
             />
         </div>
     </div>

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => 'BDT Cost Estimator | Rime Interior Design'])
+@extends('layouts.app', ['metaTitle' => 'BDT Cost Estimator | Asad Interior Design'])
 
 @section('content')
 <section class="bg-charcoal-deep text-offwhite py-20 px-4 sm:px-6 lg:px-8 text-center">

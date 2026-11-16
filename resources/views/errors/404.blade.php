@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => '404 — Space Not Found | Rime Interior Design'])
+@extends('layouts.app', ['metaTitle' => '404 — Space Not Found | Asad Interior Design'])
 
 @section('content')
 <section class="min-h-[75vh] flex items-center justify-center bg-charcoal-deep text-offwhite px-4 py-20 text-center">

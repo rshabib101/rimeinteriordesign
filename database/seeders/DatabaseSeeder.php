@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
         // 2. Site Settings (preserve admin changes if already present)
         $settings = [
             // General & Hero
-            ['key' => 'site_name', 'value' => 'Rime Interior Design', 'group' => 'general'],
+            ['key' => 'site_name', 'value' => 'Asad Interior Design', 'group' => 'general'],
             ['key' => 'notice_bar_text', 'value' => 'Accepting Q1 & Q2 2027 Projects', 'group' => 'general'],
             ['key' => 'hero_badge', 'value' => 'Architecture & Interior Curation • Dhaka', 'group' => 'hero'],
             ['key' => 'hero_badge_bn', 'value' => 'স্থাপত্য ও প্রিমিয়াম ইন্টেরিয়র স্টুডিও • ঢাকা', 'group' => 'hero'],
@@ -58,7 +58,7 @@ class DatabaseSeeder extends Seeder
             // Stats
             ['key' => 'stat_1_value', 'value' => '150+', 'group' => 'stats'],
             ['key' => 'stat_1_label', 'value' => 'Projects Handed Over', 'group' => 'stats'],
-            ['key' => 'stat_2_value', 'value' => '8+', 'group' => 'stats'],
+            ['key' => 'stat_2_value', 'value' => '14+', 'group' => 'stats'],
             ['key' => 'stat_2_label', 'value' => 'Years of Mastery', 'group' => 'stats'],
             ['key' => 'stat_3_value', 'value' => '100%', 'group' => 'stats'],
             ['key' => 'stat_3_label', 'value' => 'Turnkey Accountability', 'group' => 'stats'],
@@ -67,7 +67,7 @@ class DatabaseSeeder extends Seeder
 
             // About & Story
             ['key' => 'about_title', 'value' => 'Where Spatial Poetry Meets Precision Craftsmanship', 'group' => 'about'],
-            ['key' => 'about_story', 'value' => 'Founded in 2018 in the heart of Gulshan-2, Rime Interior Design was born from a simple conviction: great spaces should feel deeply personal while standing the test of time. Our multidisciplinary studio of architects, lighting designers, 3D visualization artists, and master artisans delivers bespoke environments across Dhaka and Chattogram.', 'group' => 'about'],
+            ['key' => 'about_story', 'value' => 'Founded in 2012 in the heart of Gulshan-2, Asad Interior Design was born from a simple conviction: great spaces should feel deeply personal while standing the test of time. Our multidisciplinary studio of architects, lighting designers, 3D visualization artists, and master artisans delivers bespoke environments across Dhaka and Chattogram.', 'group' => 'about'],
             ['key' => 'about_mission', 'value' => 'To elevate everyday living in Bangladesh through contextual luxury, honest natural materials, transparent BDT pricing, and photorealistic 3D clarity before a single nail is driven.', 'group' => 'about'],
             ['key' => 'about_vision', 'value' => 'Setting the benchmark for South Asian interior architecture through sustainable craft, millimeter-accurate joinery, and effortless turnkey execution.', 'group' => 'about'],
             ['key' => 'about_image', 'value' => 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=85', 'group' => 'about'],
@@ -86,7 +86,7 @@ class DatabaseSeeder extends Seeder
 
             // Contact & Location
             ['key' => 'phone', 'value' => '+880 1711 000 000', 'group' => 'contact'],
-            ['key' => 'email', 'value' => 'concierge@rimeinterior.com', 'group' => 'contact'],
+            ['key' => 'email', 'value' => 'concierge@asadinterior.com', 'group' => 'contact'],
             ['key' => 'whatsapp', 'value' => '+8801711000000', 'group' => 'contact'],
             ['key' => 'address', 'value' => 'Plot 42, Road 11, Block D, Gulshan-2, Dhaka 1212, Bangladesh', 'group' => 'contact'],
             ['key' => 'studio_hours', 'value' => 'Saturday – Thursday: 10:30 AM – 7:30 PM', 'group' => 'contact'],
@@ -98,11 +98,11 @@ class DatabaseSeeder extends Seeder
             ['key' => 'bdt_rate_luxury', 'value' => '4200', 'group' => 'pricing'],
 
             // Social & SEO
-            ['key' => 'instagram_url', 'value' => 'https://instagram.com/rimeinterior', 'group' => 'social'],
-            ['key' => 'facebook_url', 'value' => 'https://facebook.com/rimeinterior', 'group' => 'social'],
-            ['key' => 'linkedin_url', 'value' => 'https://linkedin.com/company/rimeinterior', 'group' => 'social'],
-            ['key' => 'pinterest_url', 'value' => 'https://pinterest.com/rimeinterior', 'group' => 'social'],
-            ['key' => 'seo_meta_title', 'value' => 'Rime Interior Design | Luxury Architecture & Interior Studio in Dhaka', 'group' => 'seo'],
+            ['key' => 'instagram_url', 'value' => 'https://instagram.com/asadinterior', 'group' => 'social'],
+            ['key' => 'facebook_url', 'value' => 'https://facebook.com/asadinterior', 'group' => 'social'],
+            ['key' => 'linkedin_url', 'value' => 'https://linkedin.com/company/asadinterior', 'group' => 'social'],
+            ['key' => 'pinterest_url', 'value' => 'https://pinterest.com/asadinterior', 'group' => 'social'],
+            ['key' => 'seo_meta_title', 'value' => 'Asad Interior Design | Luxury Architecture & Interior Studio in Dhaka', 'group' => 'seo'],
             ['key' => 'seo_meta_description', 'value' => 'Bespoke residential, corporate office, modular kitchen, and turnkey interior design studio in Gulshan-2, Dhaka with interactive 3D & VR visualization.', 'group' => 'seo'],
             ['key' => 'ga_measurement_id', 'value' => '', 'group' => 'seo'],
             ['key' => 'fb_pixel_id', 'value' => '', 'group' => 'seo'],
@@ -370,8 +370,8 @@ class DatabaseSeeder extends Seeder
                 'client_avatar' => 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
                 'project_name' => 'The Brass & Oak Penthouse',
                 'rating' => 5,
-                'quote' => 'Rime Interior turned our 4,800 sq ft shell into a breathtaking sanctuary. The 3D VR simulation matched the finished reality down to the millimetre. Their turnkey team executed on schedule without a single budget overrun.',
-                'quote_bn' => 'রাইম ইন্টেরিয়র আমাদের গুলশানের পেন্টহাউসটিকে এক অনন্য শান্তিময় শিল্পে রূপান্তর করেছে। থ্রিডি রেন্ডার যা ছিল, বাস্তবে হুবহু তাই পেয়েছি। তাদের দায়িত্বশীলতা প্রশংসনীয়।',
+                'quote' => 'Asad Interior turned our 4,800 sq ft shell into a breathtaking sanctuary. The 3D VR simulation matched the finished reality down to the millimetre. Their turnkey team executed on schedule without a single budget overrun.',
+                'quote_bn' => 'আসাদ ইন্টেরিয়র আমাদের গুলশানের পেন্টহাউসটিকে এক অনন্য শান্তিময় শিল্পে রূপান্তর করেছে। থ্রিডি রেন্ডার যা ছিল, বাস্তবে হুবহু তাই পেয়েছি। তাদের দায়িত্বশীলতা প্রশংসনীয়।',
                 'is_featured' => true,
                 'sort_order' => 1,
             ],
@@ -393,7 +393,7 @@ class DatabaseSeeder extends Seeder
                 'project_name' => 'Minimalist Sanctuary Villa',
                 'rating' => 5,
                 'quote' => 'The team’s respect for natural materials, silence, and clean lines is rare. Every morning feels like waking up in a 5-star Kyoto boutique retreat right here in Dhaka.',
-                'quote_bn' => 'প্রাকৃতিক উপাদান এবং মিনিমালিজমের প্রতি রাইম টিমের গভীর মনোযোগ বিরল। প্রতিদিনের সকাল যেন এক আন্তর্জাতিক মানের শান্তি নিয়ে আসে।',
+                'quote_bn' => 'প্রাকৃতিক উপাদান এবং মিনিমালিজমের প্রতি আসাদ টিমের গভীর মনোযোগ বিরল। প্রতিদিনের সকাল যেন এক আন্তর্জাতিক মানের শান্তি নিয়ে আসে।',
                 'is_featured' => true,
                 'sort_order' => 3,
             ],
@@ -409,7 +409,7 @@ class DatabaseSeeder extends Seeder
         // 7. Team Members
         $teamData = [
             [
-                'name' => 'Ar. Shakil Rime',
+                'name' => 'Ar. Asaduzzaman (Asad)',
                 'role' => 'Founder & Principal Architect',
                 'role_bn' => 'প্রতিষ্ঠাতা ও প্রধান স্থপতি',
                 'bio' => 'Graduated from BUET with Master of Architecture from Politecnico di Milano. 12+ years pioneering contextual luxury across South Asia.',
@@ -523,7 +523,7 @@ class DatabaseSeeder extends Seeder
                 'slug' => 'the-art-of-circadian-lighting',
                 'category' => 'Lighting Architecture',
                 'excerpt' => 'Why indirect architectural illumination and tunable 2700K warm LEDs are essential for well-being and visual depth.',
-                'content' => 'Great interior design is fundamentally the art of controlling light and shadow. Harsh overhead downlights flatten architectural volume. At Rime, we orchestrate hidden cove lighting, grazing wall washers, and sculptural focal fixtures that mimic the natural sun cycle from invigorating dawn to soothing dusk.',
+                'content' => 'Great interior design is fundamentally the art of controlling light and shadow. Harsh overhead downlights flatten architectural volume. At Asad Interior Design, we orchestrate hidden cove lighting, grazing wall washers, and sculptural focal fixtures that mimic the natural sun cycle from invigorating dawn to soothing dusk.',
                 'cover_image' => 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
                 'tags' => ['Lighting Design', 'Penthouse', 'Smart Home', 'Luxury'],
                 'views_count' => 621,

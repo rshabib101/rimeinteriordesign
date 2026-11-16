@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => 'The Design Journal | Rime Interior Design'])
+@extends('layouts.app', ['metaTitle' => 'The Design Journal | Asad Interior Design'])
 
 @section('content')
 <section class="bg-charcoal-deep text-offwhite py-20 px-4 sm:px-6 lg:px-8 text-center">
@@ -42,7 +42,7 @@
                             <p class="text-xs text-charcoal/65 leading-relaxed">{{ \Illuminate\Support\Str::limit($post->excerpt, 120) }}</p>
                         </div>
                         <div class="pt-4 border-t border-black/5 flex justify-between items-center text-xs text-charcoal/50">
-                            <span>By {{ $post->author?->name ?? 'Rime Editorial' }}</span>
+                            <span>By {{ $post->author?->name ?? 'Asad Editorial' }}</span>
                             <span class="text-gold font-bold">Read &rarr;</span>
                         </div>
                     </div>

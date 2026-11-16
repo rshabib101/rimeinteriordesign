@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => $service->localized_title . ' | Rime Interior Design', 'metaDescription' => $service->localized_short_description])
+@extends('layouts.app', ['metaTitle' => $service->localized_title . ' | Asad Interior Design', 'metaDescription' => $service->localized_short_description])
 
 @section('content')
 <section class="relative bg-charcoal-deep text-offwhite py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">

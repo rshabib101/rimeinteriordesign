@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => 'About Us | Rime Interior Design'])
+@extends('layouts.app', ['metaTitle' => 'About Us | Asad Interior Design'])
 
 @section('content')
 @php
@@ -21,7 +21,7 @@
 <section class="py-20 px-4 sm:px-6 lg:px-8 bg-[#F8F5F0]">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-6 rounded-3xl overflow-hidden shadow-2xl border border-black/5">
-            <img src="{{ $aboutImage }}" alt="Rime Studio" class="w-full h-[420px] object-cover" loading="lazy" />
+            <img src="{{ $aboutImage }}" alt="Asad Studio" class="w-full h-[420px] object-cover" loading="lazy" />
         </div>
         <div class="lg:col-span-6 space-y-6">
             <div class="glass-card-light rounded-3xl p-8 border border-black/5 space-y-3">

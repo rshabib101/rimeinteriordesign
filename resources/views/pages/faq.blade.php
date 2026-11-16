@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => 'Frequently Asked Questions | Rime Interior Design'])
+@extends('layouts.app', ['metaTitle' => 'Frequently Asked Questions | Asad Interior Design'])
 
 @section('content')
 <section class="bg-charcoal-deep text-offwhite py-20 px-4 sm:px-6 lg:px-8 text-center">

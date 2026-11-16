@@ -1,8 +1,8 @@
 @php
-    $siteName = \App\Models\Setting::get('site_name', 'Rime Interior Design');
+    $siteName = \App\Models\Setting::get('site_name', 'Asad Interior Design');
     $noticeText = \App\Models\Setting::get('notice_bar_text', 'Accepting Q1 & Q2 2027 Projects');
     $studioPhone = \App\Models\Setting::get('phone', '+880 1711 000 000');
-    $studioEmail = \App\Models\Setting::get('email', 'concierge@rimeinterior.com');
+    $studioEmail = \App\Models\Setting::get('email', 'concierge@asadinterior.com');
     $studioWhatsapp = preg_replace('/[^\d+]/', '', \App\Models\Setting::get('whatsapp', '+8801711000000'));
     $studioAddress = \App\Models\Setting::get('address', 'Plot 42, Road 11, Block D, Gulshan-2, Dhaka 1212, Bangladesh');
     $instagramUrl = \App\Models\Setting::get('instagram_url', 'https://instagram.com');
@@ -126,11 +126,11 @@
                 <!-- Brand Logo / Monogram -->
                 <a href="{{ route('home') }}" class="group flex items-center space-x-3">
                     <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center bg-gradient-to-br from-gold/15 to-transparent group-hover:border-gold transition-all duration-300">
-                        <span class="font-serif text-xl font-bold text-gold">R</span>
+                        <span class="font-serif text-xl font-bold text-gold">A</span>
                     </div>
                     <div class="flex flex-col">
                         <span class="font-serif text-2xl font-bold tracking-tight text-charcoal group-hover:text-gold transition-colors duration-300 leading-none">
-                            RIME
+                            ASAD
                         </span>
                         <span class="text-[9px] uppercase tracking-[0.3em] font-medium text-charcoal/60 mt-0.5">
                             Interior Design
@@ -316,7 +316,7 @@
     <!-- WhatsApp Floating Action Button -->
     <aside aria-label="Quick contact" class="fixed bottom-6 right-6 z-40 flex flex-col items-end space-y-3">
         <a
-            href="https://wa.me/{{ ltrim($studioWhatsapp, '+') }}?text={{ urlencode('Hello Rime Interior Studio, I would like to schedule a consultation.') }}"
+            href="https://wa.me/{{ ltrim($studioWhatsapp, '+') }}?text={{ urlencode('Hello Asad Interior Design, I would like to schedule a consultation.') }}"
             target="_blank"
             rel="noopener noreferrer"
             class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-emerald-600 text-white shadow-2xl hover:bg-emerald-500 hover:scale-105 transition-all duration-300"
@@ -343,7 +343,7 @@
                 <div class="lg:col-span-2 space-y-6">
                     <div class="flex items-center space-x-3">
                         <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center bg-gradient-to-br from-gold/20 to-transparent">
-                            <span class="font-serif text-xl font-bold text-gold">R</span>
+                            <span class="font-serif text-xl font-bold text-gold">A</span>
                         </div>
                         <span class="font-serif text-2xl font-bold tracking-tight text-offwhite uppercase">
                             {{ $siteName }}

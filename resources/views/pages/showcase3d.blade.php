@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => '3D & AR Design Showcase | Rime Interior Design'])
+@extends('layouts.app', ['metaTitle' => '3D & AR Design Showcase | Asad Interior Design'])
 
 @section('content')
 @php

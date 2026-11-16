@@ -26,7 +26,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('Rime Interior Studio')
+            ->brandName('Asad Interior Design')
             ->colors([
                 'primary' => Color::Amber,
             ])

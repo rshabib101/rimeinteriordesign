@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'brand_name' => 'Rime Interior Design',
+    'brand_name' => 'Asad Interior Design',
     'tagline' => 'Designing Spaces That Feel Like You',
     'hero_subtitle' => 'Award-winning architecture and interior design studio in Dhaka, blending spatial artistry, tactile luxury, and precision craftsmanship into enduring sanctuaries.',
     'nav' => [
@@ -39,7 +39,7 @@ return [
         'current_lang' => 'English',
     ],
     'footer' => [
-        'tagline' => 'Crafting transcendent living and working spaces since 2018. Where bespoke architectural vision meets meticulous execution.',
+        'tagline' => 'Crafting transcendent living and working spaces since 2012. Where bespoke architectural vision meets meticulous execution.',
         'quick_links' => 'Quick Links',
         'services_title' => 'Our Expertise',
         'contact_title' => 'Studio Information',
@@ -55,7 +55,7 @@ return [
         'email' => 'concierge@rimeinterior.com',
     ],
     'meta' => [
-        'home_title' => 'Rime Interior Design | Designing Spaces That Feel Like You',
+        'home_title' => 'Asad Interior Design | Designing Spaces That Feel Like You',
         'home_desc' => 'Dhaka’s premier luxury interior design firm specializing in bespoke residential, corporate, and turnkey architectural spaces.',
     ],
 ];

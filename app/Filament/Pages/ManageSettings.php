@@ -40,7 +40,7 @@ class ManageSettings extends Page
     public function mount(): void
     {
         $this->form->fill([
-            'site_name'            => Setting::get('site_name', 'Rime Interior Design'),
+            'site_name'            => Setting::get('site_name', 'Asad Interior Design'),
             'notice_bar_text'      => Setting::get('notice_bar_text', 'Accepting Q1 & Q2 2027 Projects'),
             'hero_badge'           => Setting::get('hero_badge', 'Architecture & Interior Curation • Dhaka'),
             'hero_badge_bn'        => Setting::get('hero_badge_bn', ''),
@@ -66,7 +66,7 @@ class ManageSettings extends Page
             'awards_items'         => Setting::json('awards_json'),
             'process_items'        => Setting::json('process_steps_json'),
             'phone'                => Setting::get('phone', '+880 1711 000 000'),
-            'email'                => Setting::get('email', 'concierge@rimeinterior.com'),
+            'email'                => Setting::get('email', 'concierge@asadinterior.com'),
             'whatsapp'             => Setting::get('whatsapp', '+8801711000000'),
             'address'              => Setting::get('address', ''),
             'studio_hours'         => Setting::get('studio_hours', ''),

@@ -1,9 +1,9 @@
-@extends('layouts.app', ['metaTitle' => 'Contact Us | Rime Interior Design'])
+@extends('layouts.app', ['metaTitle' => 'Contact Us | Asad Interior Design'])
 
 @section('content')
 @php
     $studioPhone = \App\Models\Setting::get('phone', '+880 1711 000 000');
-    $studioEmail = \App\Models\Setting::get('email', 'concierge@rimeinterior.com');
+    $studioEmail = \App\Models\Setting::get('email', 'concierge@asadinterior.com');
     $studioAddress = \App\Models\Setting::get('address', 'Plot 42, Road 11, Block D, Gulshan-2, Dhaka 1212, Bangladesh');
     $studioHours = \App\Models\Setting::get('studio_hours', 'Saturday – Thursday: 10:30 AM – 7:30 PM');
     $mapEmbed = \App\Models\Setting::get('google_maps_embed');
@@ -52,7 +52,7 @@
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        title="Rime Interior Design Studio Location"
+                        title="Asad Interior Design Studio Location"
                     ></iframe>
                 </div>
             @endif

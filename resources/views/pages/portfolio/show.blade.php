@@ -1,4 +1,4 @@
-@extends('layouts.app', ['metaTitle' => $project->meta_title ?? ($project->localized_title . ' | Rime Interior Design'), 'metaDescription' => $project->meta_description ?? $project->summary])
+@extends('layouts.app', ['metaTitle' => $project->meta_title ?? ($project->localized_title . ' | Asad Interior Design'), 'metaDescription' => $project->meta_description ?? $project->summary])
 
 @section('content')
 <section class="relative bg-charcoal-deep text-offwhite py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">

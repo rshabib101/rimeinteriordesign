@@ -8,7 +8,7 @@
             </div>
             <h3 class="font-serif text-3xl font-bold text-gold">Inquiry Received</h3>
             <p class="text-sm text-offwhite/80 max-w-md mx-auto">
-                Thank you for reaching out to Rime Interior Design. Our senior concierge team will respond within 24 hours.
+                Thank you for reaching out to Asad Interior Design. Our senior concierge team will respond within 24 hours.
             </p>
             @if($bookingNumber)
                 <div class="inline-block px-4 py-2 rounded-full bg-white/10 text-xs font-mono text-gold-light">
